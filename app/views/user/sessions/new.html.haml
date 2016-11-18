@@ -1,0 +1,29 @@
+.container
+  .row.main
+    .panel-heading
+      .panel-title.text-center
+        %h1.title Log in
+        %hr
+    .main-login.main-center
+      = form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "form-horizontal"}) do |f|
+        .form-group
+          %label.cols-sm-2.control-label{:for => "email"} Your Email
+          .cols-sm-10
+            .input-group
+              %span.input-group-addon
+                %i.fa.fa-envelope.fa{"aria-hidden" => "true"}
+              = f.email_field :email, autofocus: true, class: "form-control"
+        .form-group
+          %label.cols-sm-2.control-label{:for => "email"} Your Password
+          .cols-sm-10
+            .input-group
+              %span.input-group-addon
+                %i.fa.fa-lock.fa-lg{"aria-hidden" => "true"}
+              = f.password_field :password, autocomplete: "off", class: "form-control"
+        - if devise_mapping.rememberable?
+          .field
+            = f.check_box :remember_me
+            = f.label :remember_me
+        .form-group
+          = f.submit "Log in", class: "button btn btn-primary btn-lg btn-block login-button"
+      = render "user/shared/links"

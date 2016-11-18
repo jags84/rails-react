@@ -1,0 +1,19 @@
+.container
+  .row.main
+    .panel-heading
+      .panel-title.text-center
+        %h1.title Forgot your password?
+        %hr
+    .main-login.main-center
+      = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post,class: "form-horizontal" }) do |f|
+        = devise_error_messages!
+        .form-group
+          %label.cols-sm-2.control-label{:for => "email"} Your Email
+          .cols-sm-10
+            .input-group
+              %span.input-group-addon
+                %i.fa.fa-envelope.fa{"aria-hidden" => "true"}
+              = f.email_field :email, autofocus: true, class: "form-control"
+        .form-group
+          = f.submit "Reset", class: "button btn btn-primary btn-lg btn-block login-button"
+      = render "user/shared/links"
