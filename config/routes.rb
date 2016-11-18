@@ -5,14 +5,15 @@ Rails.application.routes.draw do
   
   resources :welcome, :only => [:index]
   resources :dashboard, :only => [:index]
+  resources :user_packages, :only => [:index,:create,:destroy]
 
   namespace :api do
     namespace :v1 do
-      resources :packages, :only => [:index,:create]
+      resources :packages, :only => [:index,:create,:destroy]
       resources :orders, :only => [:index,:create]
     end
   end
 
 
-  root to: "welcome#index"
+  root to: "dashboard#index"
 end

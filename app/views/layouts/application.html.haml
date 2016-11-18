@@ -4,9 +4,9 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title PI
     = csrf_meta_tags
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag    'application', media: 'all'
     = stylesheet_link_tag    "#{controller_name}"
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application'
     / font-awesome
     %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}
     / Google Fonts
@@ -46,17 +46,17 @@
                   Settings
               %li.divider
               %li
-                %a{:href => "#"}
+                %a{:href => destroy_user_session_path, 'data-method' => "delete"}
                   %i.fa.fa-fw.fa-power-off
                   Log Out
         .collapse.navbar-collapse.navbar-ex1-collapse
           %ul.nav.navbar-nav.side-nav
             %li.active
-              %a{:href => "index.html"}
+              %a{:href => dashboard_index_path}
                 %i.fa.fa-fw.fa-dashboard
                 Dashboard
             %li
-              %a{:href => "charts.html"}
+              %a{:href => user_packages_path}
                 %i.fa.fa-fw.fa-shopping-cart
                 Packages
 
