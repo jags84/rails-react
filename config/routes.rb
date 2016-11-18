@@ -6,5 +6,13 @@ Rails.application.routes.draw do
   resources :welcome, :only => [:index]
   resources :dashboard, :only => [:index]
 
+  namespace :api do
+    namespace :v1 do
+      resources :packages, :only => [:index,:create]
+      resources :orders, :only => [:index,:create]
+    end
+  end
+
+
   root to: "welcome#index"
 end
