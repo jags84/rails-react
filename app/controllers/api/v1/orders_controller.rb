@@ -1,4 +1,4 @@
-class Api::V1::OrdersController < Api::Store::V1::AuthenticateController
+class Api::V1::OrdersController < Api::V1::AuthenticateController
   # Users Order
   def index
     
