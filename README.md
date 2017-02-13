@@ -5,13 +5,14 @@ Just register with a new user and add a package in the dashboard
 
 ###Gems that i use:
 
--`gem 'devise'`
--`gem 'bootstrap-sass', '~> 3.3.6'`
--`gem 'react-rails'`
+*`gem 'devise'`
+*`gem 'bootstrap-sass', '~> 3.3.6'`
+*`gem 'react-rails'`
 
 ###To run
-1. 'rake db:create'
-2. `rake db:migrate`
-3. `rails s`
-
+```sh
+$ rake db:create
+$ rake db:migrate
+$ rails s
+```
 ### *** Work in Progress ***
