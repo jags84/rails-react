@@ -1,24 +1,18 @@
-# README
+# Simple Rails 5 Demo app with React
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Gems that i use:
 
-Things you may want to cover:
+###Devise for users
+`gem 'devise'`
 
-* Ruby version
+###Twitter Bootstrap
+`gem 'bootstrap-sass', '~> 3.3.6'`
 
-* System dependencies
+### Facebook React
+`gem 'react-rails'`
 
-* Configuration
+## To run
+`rails s`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## DB migrate
+`rake db:migrate`
