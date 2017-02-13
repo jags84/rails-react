@@ -1,7 +1,7 @@
 # Simple Rails 5 Demo app with React
 
 ## Getting Started
-Just register with a new user and add Package in the dashboard
+Just register with a new user and add a package in the dashboard
 
 ###Gems that i use:
 
@@ -10,7 +10,8 @@ Just register with a new user and add Package in the dashboard
 -`gem 'react-rails'`
 
 ###To run
-1. `rake db:migrate`
-2. `rails s`
+1. 'rake db:create'
+2. `rake db:migrate`
+3. `rails s`
 
 ### *** Work in Progress ***
