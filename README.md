@@ -10,9 +10,9 @@ Just register with a new user and add a package in the dashboard
 *`gem 'react-rails'`
 
 ###To run
-```sh
-$ rake db:create
-$ rake db:migrate
-$ rails s
-```
+
+1. `$ rake db:create`
+1. `$ rake db:migrate`
+1. `$ rails s`
+
 ### *** Work in Progress ***
