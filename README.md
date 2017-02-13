@@ -1,18 +1,16 @@
 # Simple Rails 5 Demo app with React
 
-##Gems that i use:
+## Getting Started
+Just register with a new user and add Package in the dashboard
 
-###Devise for users
-`gem 'devise'`
+###Gems that i use:
 
-###Twitter Bootstrap
-`gem 'bootstrap-sass', '~> 3.3.6'`
+-`gem 'devise'`
+-`gem 'bootstrap-sass', '~> 3.3.6'`
+-`gem 'react-rails'`
 
-### Facebook React
-`gem 'react-rails'`
+###To run
+1. `rake db:migrate`
+2. `rails s`
 
-## To run
-`rails s`
-
-## DB migrate
-`rake db:migrate`
+### *** Work in Progress ***
