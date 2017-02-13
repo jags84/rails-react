@@ -4,8 +4,7 @@
   getDefaultProps: ->
     user_packages: []
   addUserPackage: (user_package) ->
-    user_packages = @state.user_packages.slice()
-    user_packages.push user_package
+    user_packages = React.addons.update(@state.user_packages, { $push: [user_package] })
     @setState user_packages: user_packages
   deleteUserPackage: (user_package) ->
     user_packages = @state.user_packages.slice()
